@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Anon</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="Assets/favicon.ico">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Anon home">
+        <img src="Assets/logo.svg" alt="Anon" height="40" width="120" />
+      </a>
+
+      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shope.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+        <a class="icon-link" href="cart.html" aria-label="Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 6h15l-2 9H8L6 3H3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <circle cx="9" cy="20" r="1.8" />
+            <circle cx="18" cy="20" r="1.8" />
+          </svg>
+          <span class="sr-only">Cart</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="title">#Let's Talk</h1>
+        <p class="muted">Leave a message — we love to hear from you</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <span class="eyebrow">Get in touch</span>
+          <h2 class="title-sm">Visit one of our locations or contact us today</h2>
+          <h3 class="subtitle">Head Office</h3>
+          <ul class="contact-list">
+            <li><strong>Address:</strong> Noida, Uttar Pradesh, India</li>
+            <li><strong>Email:</strong> contact@example.com</li>
+            <li><strong>Phone:</strong> +91 89xx xxxx xx</li>
+            <li><strong>Hours:</strong> Mon–Sat, 9:00AM–4:00PM</li>
+          </ul>
+        </div>
+
+        <div class="map-wrap">
+          <iframe title="Map to Anon, Noida Uttar Pradesh India"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28035.277253575765!2d77.55239300000004!3d28.55745890000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ceb4e4770e023%3A0x3d9b9e01106cf495!2sDadri%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1719849662655!5m2!1sen!2sin"
+            style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-form-row">
+        <form class="contact-form" onsubmit="event.preventDefault()">
+          <span class="eyebrow">Leave a message</span>
+          <h2 class="title-sm">We love to hear from you</h2>
+
+          <label class="sr-only" for="name">Your name</label>
+          <input id="name" type="text" placeholder="Your name" required />
+
+          <label class="sr-only" for="email">Email</label>
+          <input id="email" type="email" placeholder="E-mail" required />
+
+          <label class="sr-only" for="subject">Subject</label>
+          <input id="subject" type="text" placeholder="Subject" />
+
+          <label class="sr-only" for="message">Your message</label>
+          <textarea id="message" rows="6" placeholder="Your message" required></textarea>
+
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+
+        <div class="people">
+          <div class="person">
+            <img src="Assets/1.png" alt="" />
+            <p><strong>John Doe</strong> — Senior Marketing Manager<br />Phone: +91 89xx xxxx xx<br />Email:
+              contact@example.com</p>
+          </div>
+          <div class="person">
+            <img src="Assets/2.png" alt="" />
+            <p><strong>William Smith</strong> — Senior Marketing Manager<br />Phone: +91 89xx xxxx xx<br />Email:
+              contact@example.com</p>
+          </div>
+          <div class="person">
+            <img src="Assets/3.png" alt="" />
+            <p><strong>Emma Stone</strong> — Senior Marketing Manager<br />Phone: +91 89xx xxxx xx<br />Email:
+              contact@example.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container newsletter-inner">
+        <div>
+          <h3>Sign up for newsletters</h3>
+          <p class="muted invert">Get email updates about our latest shop and special offers</p>
+        </div>
+        <form class="newsletter-form" action="#" onsubmit="event.preventDefault()"><label class="sr-only"
+            for="nl-email-contact">Email</label><input id="nl-email-contact" type="email"
+            placeholder="Your email address" required /><button class="btn btn-primary" type="submit">Sign Up</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="section-p1">
+    <div class="content">
+      <div class="col">
+        <img class="logo" src="Assets/logo.svg" alt="" height="80" width="100">
+        <h4>Contact</h4>
+        <p><strong>Address: </strong>Noida G.B.Nagar, Uttar Pradesh , India</p>
+        <p><strong>Phone: </strong>+91 89xx xx xxxx</p>
+        <p><strong>Hours: </strong>10:00 - 06:00, Mon - Set</p>
+        <div class="follow">
+          <h4>Follow us</h4>
+          <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-square-github"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+      </div>
+
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Carts</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Helps</a>
+      </div>
+
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store & Google Play</p>
+        <div class="row">
+          <img src="Assets/app.jpg" alt="">
+          <img src="Assets/play.jpg" alt="">
+          <p>Secured Payment Getway</p>
+          <img src="Assets/pay.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 Anon. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
