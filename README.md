@@ -8,7 +8,7 @@ A modern, responsive e-commerce website for a fashion store built with HTML, CSS
 
 ## 📸 Screenshots
 
-![Captcha Generator Screenshot](https://github.com/Daniish-Qureshi/Captcha-Generator/blob/main/cal.png)
+![Captcha Generator Screenshot](https://github.com/Daniish-Qureshi/Anon-E-commers/blob/main/Demo.png)
 
 ## 🌟 Features
 
